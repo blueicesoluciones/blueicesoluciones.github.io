@@ -1,0 +1,29 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.bg-glacial-gradient {
+  background: linear-gradient(135deg, #003e6b 0%, #005691 100%);
+}
+
+.monolith-gradient {
+  background: linear-gradient(135deg, #003e6b 0%, #005691 100%);
+}
+
+.glass-panel {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  min-height: max(884px, 100dvh);
+}
+
+.pb-safe {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom, 0px));
+}
+
+#mobile-drawer:not(.hidden) {
+  pointer-events: auto;
+}

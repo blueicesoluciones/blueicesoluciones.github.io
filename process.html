@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proceso de trabajo | Blue Ice Soluciones Tecnológicas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body
+    class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container pb-24 md:pb-0"
+  >
+    <div
+      id="mobile-drawer"
+      class="hidden fixed inset-0 z-[60] md:hidden"
+      aria-hidden="true"
+    >
+      <div
+        class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm"
+        data-drawer-close
+      ></div>
+      <nav
+        class="absolute top-0 right-0 bottom-0 w-[min(100%,20rem)] bg-slate-50 dark:bg-slate-950 border-l border-slate-200/20 shadow-2xl p-6 pt-24 flex flex-col gap-1 font-label"
+        aria-label="Menú móvil"
+      >
+        <a
+          class="px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 font-semibold"
+          href="index.html"
+          >Home</a
+        >
+        <a
+          class="px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 font-semibold"
+          href="services.html"
+          >Services</a
+        >
+        <a
+          class="px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 font-semibold"
+          href="work.html"
+          >Work</a
+        >
+        <a
+          class="px-3 py-3 rounded-lg bg-blue-100/50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-400 font-bold"
+          href="process.html"
+          >Process</a
+        >
+      </nav>
+    </div>
+
+    <header
+      class="flex justify-between items-center px-6 py-4 w-full z-50 docked full-width top-0 sticky bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none"
+    >
+      <div class="flex items-center gap-4">
+        <button
+          type="button"
+          class="active:scale-95 duration-200 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors p-2 rounded-lg md:hidden"
+          data-menu-toggle
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Abrir menú"
+        >
+          <span class="material-symbols-outlined text-blue-900 dark:text-blue-200"
+            >menu</span
+          >
+        </button>
+        <a
+          href="index.html"
+          class="text-xl font-black text-blue-900 dark:text-blue-100 tracking-tighter font-headline"
+          >Blue Ice</a
+        >
+      </div>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Principal">
+        <a
+          class="text-slate-500 dark:text-slate-400 hover:text-blue-600 font-medium transition-colors"
+          href="index.html"
+          >Home</a
+        >
+        <a
+          class="text-slate-500 dark:text-slate-400 hover:text-blue-600 font-medium transition-colors"
+          href="services.html"
+          >Services</a
+        >
+        <a
+          class="text-slate-500 dark:text-slate-400 hover:text-blue-600 font-medium transition-colors"
+          href="work.html"
+          >Work</a
+        >
+        <a
+          class="text-blue-700 dark:text-blue-400 font-bold underline underline-offset-4 font-headline"
+          href="process.html"
+          aria-current="page"
+          >Process</a
+        >
+      </nav>
+      <button
+        type="button"
+        class="active:scale-95 duration-200 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors p-2 rounded-lg"
+        aria-label="Chat (próximamente)"
+      >
+        <span class="material-symbols-outlined text-blue-900 dark:text-blue-200"
+          >chat</span
+        >
+      </button>
+    </header>
+
+    <main class="min-h-screen">
+      <section class="relative pt-24 pb-16 px-6 md:px-24">
+        <div class="max-w-6xl mx-auto">
+          <div class="flex flex-col md:flex-row justify-between items-end gap-12">
+            <div class="max-w-2xl">
+              <span
+                class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-[0.2em] uppercase mb-6 font-label"
+                >La confianza</span
+              >
+              <h1
+                class="text-5xl md:text-7xl font-headline font-extrabold text-primary tracking-tight leading-[1.1] mb-8"
+              >
+                Precisión glacial en cada
+                <span class="text-surface-tint">píxel.</span>
+              </h1>
+              <p class="text-xl text-on-surface-variant leading-relaxed font-light">
+                Transformamos la complejidad técnica en interfaces sólidas y fluidas.
+                Nuestro proceso está diseñado para brindar seguridad y claridad absoluta
+                en cada etapa del desarrollo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute top-0 right-0 -z-10 w-1/3 h-full bg-surface-container opacity-50 hidden lg:block"
+          style="clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%)"
+        ></div>
+      </section>
+
+      <section class="py-24 px-6 md:px-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 relative">
+            <div
+              class="hidden lg:block absolute top-1/2 left-0 w-full h-px bg-outline-variant/30 -translate-y-1/2 z-0"
+            ></div>
+
+            <div class="group relative z-10">
+              <div
+                class="bg-surface-container-lowest p-8 rounded-xl h-full border-b-4 border-transparent hover:border-primary transition-all duration-300 shadow-[0px_12px_32px_rgba(25,28,30,0.04)] hover:shadow-[0px_20px_48px_rgba(25,28,30,0.1)]"
+              >
+                <div
+                  class="mb-8 w-14 h-14 rounded-lg bg-primary flex items-center justify-center text-on-primary"
+                >
+                  <span class="material-symbols-outlined text-3xl">lightbulb</span>
+                </div>
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-4xl font-headline font-black text-outline-variant/40"
+                    >01</span
+                  >
+                  <h2 class="text-2xl font-headline font-bold text-primary">Briefing</h2>
+                </div>
+                <p class="text-on-surface-variant font-body">
+                  Escuchamos tu idea. Analizamos objetivos y trazamos la ruta crítica
+                  para el éxito del proyecto.
+                </p>
+                <div
+                  class="mt-8 flex items-center text-primary font-bold text-sm tracking-widest uppercase gap-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <span>Entender</span>
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="group relative z-10 lg:mt-12">
+              <div
+                class="bg-surface-container-lowest p-8 rounded-xl h-full border-b-4 border-transparent hover:border-primary transition-all duration-300 shadow-[0px_12px_32px_rgba(25,28,30,0.04)] hover:shadow-[0px_20px_48px_rgba(25,28,30,0.1)]"
+              >
+                <div
+                  class="mb-8 w-14 h-14 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container"
+                >
+                  <span class="material-symbols-outlined text-3xl">layers</span>
+                </div>
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-4xl font-headline font-black text-outline-variant/40"
+                    >02</span
+                  >
+                  <h2 class="text-2xl font-headline font-bold text-primary">Diseño</h2>
+                </div>
+                <p class="text-on-surface-variant font-body">
+                  Creamos el prototipo visual. Definimos la estética monolítica y la
+                  arquitectura de información.
+                </p>
+                <div
+                  class="mt-8 flex items-center text-primary font-bold text-sm tracking-widest uppercase gap-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <span>Visualizar</span>
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="group relative z-10">
+              <div
+                class="bg-surface-container-lowest p-8 rounded-xl h-full border-b-4 border-transparent hover:border-primary transition-all duration-300 shadow-[0px_12px_32px_rgba(25,28,30,0.04)] hover:shadow-[0px_20px_48px_rgba(25,28,30,0.1)]"
+              >
+                <div
+                  class="mb-8 w-14 h-14 rounded-lg bg-surface-tint flex items-center justify-center text-on-primary"
+                >
+                  <span class="material-symbols-outlined text-3xl">terminal</span>
+                </div>
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-4xl font-headline font-black text-outline-variant/40"
+                    >03</span
+                  >
+                  <h2 class="text-2xl font-headline font-bold text-primary">Desarrollo</h2>
+                </div>
+                <p class="text-on-surface-variant font-body">
+                  Construimos tu sitio con código limpio. Rendimiento optimizado y
+                  arquitectura escalable.
+                </p>
+                <div
+                  class="mt-8 flex items-center text-primary font-bold text-sm tracking-widest uppercase gap-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <span>Ejecutar</span>
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="group relative z-10 lg:mt-12">
+              <div
+                class="bg-surface-container-lowest p-8 rounded-xl h-full border-b-4 border-transparent hover:border-primary transition-all duration-300 shadow-[0px_12px_32px_rgba(25,28,30,0.04)] hover:shadow-[0px_20px_48px_rgba(25,28,30,0.1)]"
+              >
+                <div
+                  class="mb-8 w-14 h-14 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary-container"
+                >
+                  <span class="material-symbols-outlined text-3xl">rocket_launch</span>
+                </div>
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-4xl font-headline font-black text-outline-variant/40"
+                    >04</span
+                  >
+                  <h2 class="text-2xl font-headline font-bold text-primary">Lanzamiento</h2>
+                </div>
+                <p class="text-on-surface-variant font-body">
+                  Tu web sale al mundo. Realizamos pruebas finales y desplegamos tu
+                  solución tecnológica.
+                </p>
+                <div
+                  class="mt-8 flex items-center text-primary font-bold text-sm tracking-widest uppercase gap-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <span>Despegar</span>
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 px-6 md:px-24">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+          <div class="w-full md:w-1/2 aspect-video rounded-2xl overflow-hidden shadow-2xl relative">
+            <img
+              alt="Equipo trabajando en diseño y código"
+              class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE28W8AJRDkrn1NETdxB8XwsGYsEzgmDNpp_yrlridAZk2Z2ZyMXPCcf9Z1s4oq22wW_yh2i5nrY0oHFY6Z2fvgqm2h9eoz2HXp4ufyw_K9EVky4KmaJomuUWXSJFZffXkrpJ4ivGAcgke28KqcsVLSWf0iyXS81gBuMwozHba_27ByKcw1Uk7GZLYkP1ccVmwakIE39dJisLFWGxPhYumaIs4ffvwXprCyezYWBPDcfrZyzGx2DokaMf70uYIh8cd7Zxu2CNwog"
+            />
+            <div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px]"></div>
+          </div>
+          <div class="w-full md:w-1/2">
+            <h2
+              class="text-4xl font-headline font-bold text-primary mb-6 leading-tight"
+            >
+              ¿Listo para dar el primer paso hacia la solidez digital?
+            </h2>
+            <p class="text-on-surface-variant mb-10 text-lg">
+              No construimos webs, construimos activos digitales que generan confianza
+              desde el primer contacto.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="services.html"
+                class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary rounded-md font-bold hover:bg-primary-container transition-all active:scale-95 shadow-lg"
+                >Comenzar briefing</a
+              >
+              <a
+                href="work.html"
+                class="inline-flex items-center justify-center px-8 py-4 border border-outline text-primary rounded-md font-bold hover:bg-surface-container-low transition-all active:scale-95"
+                >Ver proyectos</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 px-6 md:px-24 bg-surface-container">
+        <div class="max-w-7xl mx-auto">
+          <h2
+            class="text-3xl font-headline font-extrabold text-primary mb-12 text-center md:text-left"
+          >
+            Por qué confiar en Blue Ice
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4 h-auto md:h-[600px]">
+            <div
+              class="md:col-span-2 md:row-span-1 bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-end"
+            >
+              <span class="material-symbols-outlined text-primary text-5xl mb-6"
+                >verified_user</span
+              >
+              <h3 class="text-2xl font-headline font-bold mb-2">Transparencia total</h3>
+              <p class="text-on-surface-variant">
+                Acceso en tiempo real a los avances del proyecto mediante herramientas de
+                gestión compartida.
+              </p>
+            </div>
+            <div
+              class="md:col-span-1 md:row-span-2 bg-glacial-gradient p-10 rounded-xl text-on-primary flex flex-col items-center justify-center text-center"
+            >
+              <div class="text-6xl font-headline font-black mb-4">99,9 %</div>
+              <h3 class="text-xl font-headline font-bold mb-4 uppercase tracking-widest">
+                Uptime garantizado
+              </h3>
+              <p class="opacity-80">
+                Nuestras soluciones están alojadas en infraestructuras de clase mundial
+                con redundancia total.
+              </p>
+            </div>
+            <div
+              class="md:col-span-1 md:row-span-1 bg-surface-container-high p-10 rounded-xl flex flex-col justify-center"
+            >
+              <h3 class="text-xl font-headline font-bold mb-2">Código limpio</h3>
+              <p class="text-on-surface-variant text-sm">
+                Arquitecturas semánticas que facilitan el SEO y el mantenimiento futuro.
+              </p>
+            </div>
+            <div
+              class="md:col-span-1 md:row-span-1 bg-secondary-container p-10 rounded-xl flex flex-col justify-center"
+            >
+              <h3 class="text-xl font-headline font-bold mb-2 text-on-secondary-container">
+                Soporte glacial
+              </h3>
+              <p class="text-on-secondary-container text-sm">
+                Respuesta rápida y efectiva ante cualquier eventualidad técnica.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="w-full py-12 px-6 bg-slate-100 dark:bg-slate-900 bg-gradient-to-b from-transparent to-slate-200/30 dark:to-slate-800/30 flex flex-col items-center gap-6 text-center"
+    >
+      <div
+        class="font-headline font-extrabold text-blue-900 dark:text-blue-100 text-2xl tracking-tighter"
+      >
+        Blue Ice
+      </div>
+      <nav class="flex gap-8 flex-wrap justify-center" aria-label="Redes sociales">
+        <a
+          class="text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-colors font-body text-sm leading-relaxed"
+          href="#"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a
+          class="text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-colors font-body text-sm leading-relaxed"
+          href="https://github.com/blueicesoluciones"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a
+          class="text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-colors font-body text-sm leading-relaxed"
+          href="#"
+          rel="noopener noreferrer"
+          >WhatsApp</a
+        >
+      </nav>
+      <p class="font-body text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+        © 2026 Blue Ice Soluciones Tecnológicas. Built for precision.
+      </p>
+    </footer>
+
+    <nav
+      class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-md border-t border-slate-200/10 shadow-[0px_-4px_12px_rgba(0,0,0,0.05)] rounded-t-xl"
+      aria-label="Navegación principal móvil"
+    >
+      <a
+        href="index.html"
+        class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-all duration-300 ease-out"
+      >
+        <span class="material-symbols-outlined">home</span>
+        <span class="font-body text-[10px] font-semibold uppercase tracking-widest mt-1"
+          >Home</span
+        >
+      </a>
+      <a
+        href="services.html"
+        class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-all duration-300 ease-out"
+      >
+        <span class="material-symbols-outlined">settings_suggest</span>
+        <span class="font-body text-[10px] font-semibold uppercase tracking-widest mt-1"
+          >Services</span
+        >
+      </a>
+      <a
+        href="work.html"
+        class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-all duration-300 ease-out"
+      >
+        <span class="material-symbols-outlined">grid_view</span>
+        <span class="font-body text-[10px] font-semibold uppercase tracking-widest mt-1"
+          >Work</span
+        >
+      </a>
+      <a
+        href="process.html"
+        class="flex flex-col items-center justify-center text-blue-700 dark:text-blue-400 bg-blue-100/50 dark:bg-blue-900/40 rounded-xl px-3 py-1 transition-all duration-300 ease-out"
+      >
+        <span class="material-symbols-outlined">account_tree</span>
+        <span class="font-body text-[10px] font-semibold uppercase tracking-widest mt-1"
+          >Process</span
+        >
+      </a>
+    </nav>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

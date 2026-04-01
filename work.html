@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio | Blue Ice Soluciones Tecnológicas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body
+    class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container pb-24 md:pb-0"
+  >
+    <div
+      id="mobile-drawer"
+      class="hidden fixed inset-0 z-[60] md:hidden"
+      aria-hidden="true"
+    >
+      <div
+        class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm"
+        data-drawer-close
+      ></div>
+      <nav
+        class="absolute top-0 right-0 bottom-0 w-[min(100%,20rem)] bg-slate-50 dark:bg-slate-950 border-l border-slate-200/20 shadow-2xl p-6 pt-24 flex flex-col gap-1 font-label"
+        aria-label="Menú móvil"
+      >
+        <a
+          class="px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 font-semibold"
+          href="index.html"
+          >Home</a
+        >
+        <a
+          class="px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 font-semibold"
+          href="services.html"
+          >Services</a
+        >
+        <a
+          class="px-3 py-3 rounded-lg bg-blue-100/50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-400 font-bold"
+          href="work.html"
+          >Work</a
+        >
+        <a
+          class="px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 font-semibold"
+          href="process.html"
+          >Process</a
+        >
+      </nav>
+    </div>
+
+    <header
+      class="bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none font-headline font-bold tracking-tight fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4"
+    >
+      <div class="flex items-center gap-3">
+        <button
+          type="button"
+          class="md:hidden p-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors"
+          data-menu-toggle
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Abrir menú"
+        >
+          <span class="material-symbols-outlined text-blue-900 dark:text-blue-200"
+            >menu</span
+          >
+        </button>
+        <a
+          href="index.html"
+          class="text-xl font-black text-blue-900 dark:text-blue-100 tracking-tighter"
+          >Blue Ice</a
+        >
+      </div>
+      <nav class="hidden md:flex gap-8 items-center" aria-label="Principal">
+        <a
+          class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+          href="index.html"
+          >Home</a
+        >
+        <a
+          class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+          href="services.html"
+          >Services</a
+        >
+        <a class="text-blue-700 dark:text-blue-400 font-bold" href="work.html">Work</a>
+        <a
+          class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors"
+          href="process.html"
+          >Process</a
+        >
+      </nav>
+      <div class="flex items-center gap-4">
+        <span
+          class="material-symbols-outlined text-blue-900 dark:text-blue-200"
+          aria-hidden="true"
+          >chat</span
+        >
+      </div>
+    </header>
+
+    <main class="pt-24 pb-32">
+      <section class="px-6 md:px-24 mb-24">
+        <div class="max-w-7xl mx-auto">
+          <span
+            class="inline-block px-4 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs font-bold tracking-[0.2em] uppercase mb-6"
+            >Portafolio</span
+          >
+          <h1
+            class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter leading-tight mb-8"
+          >
+            La evidencia de la
+            <br />
+            <span class="text-primary">precisión digital</span>
+          </h1>
+          <p class="text-on-surface-variant text-xl max-w-2xl leading-relaxed">
+            Transformamos desafíos complejos en arquitecturas digitales sólidas. Nuestra
+            prueba reside en soluciones que no solo funcionan, sino que perduran.
+          </p>
+        </div>
+      </section>
+
+      <section class="px-6 md:px-24 mb-24">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
+          <div class="md:col-span-7 group">
+            <div
+              class="bg-surface-container-low p-8 rounded-xl overflow-hidden transition-all duration-300 hover:bg-surface-container-high hover:shadow-[0px_12px_32px_rgba(25,28,30,0.06)]"
+            >
+              <div
+                class="aspect-[16/9] w-full rounded-lg overflow-hidden bg-surface-variant mb-8 relative"
+              >
+                <img
+                  alt="Interfaz de e-commerce minimalista con productos artesanales"
+                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgiAMkW35_bYgSqtl1B6rr1o3h8kX6mV1uJwdF9_RBa2VImyG1lGtUBgefi-bPXp6kfZZEofptFaJmeBD4eFBlUbzwpQvjsNoYDQGkudx5Toq_w8US-CppigFiR1ZcrVqPxO-6yg4BI-86VlpzyGy66XShIhUzt3DrmRrH_dKKFhlRuaXqkfQ1FRpO5Po2tpQbKkktLNh0szz5IfNnoMUpJ0q6aAr4AqvSIfX-ThU2mHuheY7s2xW9KBbfrnPh_pxMHtrySAvRXA"
+                />
+              </div>
+              <div class="space-y-4">
+                <h2 class="font-headline text-3xl font-bold text-on-surface tracking-tight">
+                  E-commerce para artesanos
+                </h2>
+                <div class="flex flex-col gap-4">
+                  <div>
+                    <h3 class="text-primary font-bold text-sm uppercase tracking-widest mb-1">
+                      El desafío
+                    </h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      Digitalizar la esencia táctil de productos hechos a mano sin perder
+                      la calidez humana en una interfaz fría.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 class="text-primary font-bold text-sm uppercase tracking-widest mb-1">
+                      La solución
+                    </h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      Una plataforma headless con un motor de búsqueda visual y
+                      navegación minimalista que prioriza la fotografía en alta
+                      definición.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-5 md:mt-12 group">
+            <div
+              class="bg-surface-container-low p-8 rounded-xl overflow-hidden transition-all duration-300 hover:bg-surface-container-high hover:shadow-[0px_12px_32px_rgba(25,28,30,0.06)]"
+            >
+              <div
+                class="aspect-square w-full rounded-lg overflow-hidden bg-surface-variant mb-8 relative"
+              >
+                <img
+                  alt="Panel de analítica fintech con gráficos"
+                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0WBVOdYk9OJCowk7s9n5_lt0wyvSOYKyRAgcSgYOhK_QjSmJrai9XHGrymykXotlPWLMYi2sfiBR0N_A4_A82naqNawHyH_wXZDC1T4aOXKCjsecDOzWvRtxg2xZWlsrWtFaPfV6dPn11lsvHoglQkjXyEKPymYUeHphNcYRp9cpqO_i0xCA4RFpxtdFosqgHv3Rgb9X-UYFrrYZSxqCrv4A4GjggdZ569lDTKrqGoqHwNmCPGzVQJevHOBZNFsiITg0eBvSBYQ"
+                />
+              </div>
+              <div class="space-y-4">
+                <h2 class="font-headline text-2xl font-bold text-on-surface tracking-tight">
+                  Análisis de flujo fintech
+                </h2>
+                <div>
+                  <h3 class="text-primary font-bold text-sm uppercase tracking-widest mb-1">
+                    El desafío
+                  </h3>
+                  <p class="text-on-surface-variant text-sm leading-relaxed">
+                    Visualizar 1,2 millones de transacciones diarias en tiempo real sin
+                    latencia de renderizado.
+                  </p>
+                </div>
+                <div>
+                  <h3 class="text-primary font-bold text-sm uppercase tracking-widest mb-1">
+                    La solución
+                  </h3>
+                  <p class="text-on-surface-variant text-sm leading-relaxed">
+                    Implementación de WebGL para el procesamiento gráfico y arquitectura de
+                    microservicios distribuida.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-12 group">
+            <div
+              class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col md:flex-row transition-all duration-300 hover:bg-surface-container-high hover:shadow-[0px_12px_32px_rgba(25,28,30,0.06)]"
+            >
+              <div class="md:w-3/5 p-12 space-y-6">
+                <span
+                  class="inline-block text-surface-tint font-bold text-xs uppercase tracking-[0.3em]"
+                  >Logística inteligente</span
+                >
+                <h2
+                  class="font-headline text-4xl font-extrabold text-on-surface tracking-tight leading-none"
+                >
+                  Gestión de flota crítica
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                  <div>
+                    <h3 class="text-primary font-bold text-sm uppercase tracking-widest mb-2">
+                      El desafío
+                    </h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      Coordinar rutas de suministro médico en zonas de baja conectividad
+                      satelital.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 class="text-primary font-bold text-sm uppercase tracking-widest mb-2">
+                      La solución
+                    </h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                      Algoritmos de IA locales (edge computing) que optimizan rutas
+                      offline y sincronizan ráfagas de datos en puntos de conexión.
+                    </p>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <button
+                    type="button"
+                    class="bg-primary text-on-primary px-8 py-3 rounded-md font-bold hover:bg-primary-container transition-colors active:scale-95 duration-200"
+                  >
+                    Ver caso de estudio
+                  </button>
+                </div>
+              </div>
+              <div class="md:w-2/5 aspect-video md:aspect-auto bg-surface-variant min-h-[240px]">
+                <img
+                  alt="Entorno logístico con visualización de datos"
+                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiNOmdscnOEOMdCv2FQ8q6kKPW3E4pu2XHVzIXTtL2Lno0mKkEZjVT81Fmgr4c0qtYxNbX7yU6G2u2LzUv2hgVkXmKWvIZGz6XF7pioPZaQIHveIkRGy5XbG4IY7t6hnpr0B9BzpChMilSnLbm30bwBcjQhU1_ukXTWmgNZzR6_C_YWC-CoX2SqhA_OviYrgh9jZUqa4Me-AfNstmFU3IWKv_UCwJfflE5hEXeZ9xuEUDRYiEwN-NtUepCZX6dU7RcjkVMK9ybVQ"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 md:px-24">
+        <div
+          class="max-w-7xl mx-auto monolith-gradient rounded-2xl p-12 md:p-24 flex flex-col items-center text-center"
+        >
+          <h2 class="font-headline text-4xl md:text-5xl font-bold text-white mb-8">
+            Nuestra ingeniería es transparente.
+          </h2>
+          <p class="text-on-primary-container text-xl max-w-2xl mb-12 opacity-90">
+            Creemos en el código limpio como base de la confianza. Explora nuestros
+            frameworks, librerías y experimentos técnicos directamente en la fuente.
+          </p>
+          <a
+            class="inline-flex items-center gap-3 bg-white text-primary px-10 py-5 rounded-md font-extrabold text-lg hover:bg-blue-50 transition-all shadow-xl active:scale-95"
+            href="https://github.com/blueicesoluciones"
+            rel="noopener noreferrer"
+          >
+            <span class="material-symbols-outlined">terminal</span>
+            Ver más en GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-slate-100 dark:bg-slate-900 w-full py-12 px-6 bg-gradient-to-b from-transparent to-slate-200/30 dark:to-slate-800/30 flex flex-col items-center gap-6 text-center"
+    >
+      <div
+        class="font-headline font-extrabold text-blue-900 dark:text-blue-100 text-2xl tracking-tighter"
+      >
+        Blue Ice
+      </div>
+      <nav class="flex gap-8 flex-wrap justify-center" aria-label="Redes sociales">
+        <a
+          class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors opacity-80 hover:opacity-100"
+          href="#"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a
+          class="text-slate-500 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-300 transition-colors opacity-80 hover:opacity-100 underline underline-offset-4 font-bold text-blue-700"
+          href="https://github.com/blueicesoluciones"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a
+          class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors opacity-80 hover:opacity-100"
+          href="#"
+          rel="noopener noreferrer"
+          >WhatsApp</a
+        >
+      </nav>
+      <p class="font-body text-sm leading-relaxed text-slate-500 dark:text-slate-400 max-w-md">
+        © 2026 Blue Ice Soluciones Tecnológicas. Built for precision.
+      </p>
+    </footer>
+
+    <nav
+      class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe bg-slate-50/90 dark:bg-slate-950/90 backdrop-blur-md border-t border-slate-200/10 shadow-[0px_-4px_12px_rgba(0,0,0,0.05)] rounded-t-xl"
+      aria-label="Navegación principal móvil"
+    >
+      <a
+        href="index.html"
+        class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400"
+      >
+        <span class="material-symbols-outlined">home</span>
+        <span class="font-body text-[10px] font-semibold uppercase tracking-widest mt-1"
+          >Home</span
+        >
+      </a>
+      <a
+        href="services.html"
+        class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400"
+      >
+        <span class="material-symbols-outlined">settings_suggest</span>
+        <span class="font-body text-[10px] font-semibold uppercase tracking-widest mt-1"
+          >Services</span
+        >
+      </a>
+      <a
+        href="work.html"
+        class="flex flex-col items-center justify-center text-blue-700 dark:text-blue-400 bg-blue-100/50 dark:bg-blue-900/40 rounded-xl px-3 py-1"
+      >
+        <span
+          class="material-symbols-outlined"
+          style="font-variation-settings: 'FILL' 1"
+          >grid_view</span
+        >
+        <span class="font-body text-[10px] font-semibold uppercase tracking-widest mt-1"
+          >Work</span
+        >
+      </a>
+      <a
+        href="process.html"
+        class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400"
+      >
+        <span class="material-symbols-outlined">account_tree</span>
+        <span class="font-body text-[10px] font-semibold uppercase tracking-widest mt-1"
+          >Process</span
+        >
+      </a>
+    </nav>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
