@@ -123,20 +123,19 @@
         </div>
         <div class="relative z-10 w-full max-w-7xl mx-auto">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7 flex flex-col justify-center gap-8">
-              <h1
-                class="font-headline text-5xl lg:text-7xl font-extrabold text-primary tracking-tight leading-[1.1]"
+            <div
+              class="lg:col-span-7 flex flex-col justify-center items-center text-center gap-8"
+            >
+              <div
+                class="flex flex-col lg:flex-row lg:items-end lg:justify-center gap-8 w-full"
               >
-                Transformamos tu idea en una
-                <span class="text-surface-tint">presencia digital</span> imparable.
-              </h1>
-
-              <div class="flex flex-col lg:flex-row lg:items-center gap-8">
-                <p class="text-xl text-on-surface-variant max-w-xl leading-relaxed lg:flex-1">
-                  Construimos arquitectura digital sólida y escalable. Elevamos tu marca
-                  mediante soluciones de alta precisión que actúan como tu vitrina digital
-                  definitiva.
-                </p>
+                <h1
+                  class="font-headline text-5xl lg:text-7xl font-extrabold text-primary tracking-tight leading-[1.1] flex-1"
+                >
+                  Transformamos tu idea en una
+                  <br />
+                  <span class="text-surface-tint">presencia digital</span> imparable.
+                </h1>
 
                 <a
                   href="services.html"
@@ -145,6 +144,14 @@
                   ver servicios
                 </a>
               </div>
+
+              <p
+                class="text-xl text-on-surface-variant max-w-xl leading-relaxed"
+              >
+                Construimos arquitectura digital sólida y escalable. Elevamos tu marca
+                mediante soluciones de alta precisión que actúan como tu vitrina digital
+                definitiva.
+              </p>
             </div>
 
             <div class="lg:col-span-5 relative hidden lg:block">
@@ -154,10 +161,12 @@
         </div>
       </section>
 
-      <section class="py-24 px-6 lg:px-24 bg-surface-container-low">
+      <section class="py-24 px-6 lg:px-24 -mt-28 bg-transparent relative z-10">
         <div class="max-w-6xl mx-auto">
-          <div class="text-center mb-16">
-            <p class="text-xs font-bold text-primary tracking-[0.25em] uppercase mb-4">
+          <div class="text-center mb-10">
+            <p
+              class="text-xs font-bold text-primary tracking-[0.25em] uppercase mb-4"
+            >
               ECOSISTEMA TECNOLÓGICO
             </p>
             <h2 class="font-headline text-3xl font-bold text-on-surface">
@@ -165,28 +174,36 @@
             </h2>
           </div>
           <div
-            class="grid grid-cols-2 md:grid-cols-4 gap-10 items-center opacity-70"
+            class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60"
           >
             <div class="flex flex-col items-center gap-2">
-              <div class="text-2xl font-black font-headline">React.js</div>
+              <div class="text-lg md:text-xl font-black font-headline text-on-surface-variant/90">
+                React.js
+              </div>
             </div>
             <div class="flex flex-col items-center gap-2">
-              <div class="text-2xl font-black font-headline">Next.js</div>
+              <div class="text-lg md:text-xl font-black font-headline text-on-surface-variant/90">
+                Next.js
+              </div>
             </div>
             <div class="flex flex-col items-center gap-2">
-              <div class="text-2xl font-black font-headline">TypeScript</div>
+              <div class="text-lg md:text-xl font-black font-headline text-on-surface-variant/90">
+                TypeScript
+              </div>
             </div>
             <div class="flex flex-col items-center gap-2">
-              <div class="text-2xl font-black font-headline">Tailwind</div>
+              <div class="text-lg md:text-xl font-black font-headline text-on-surface-variant/90">
+                Tailwind
+              </div>
             </div>
           </div>
-          <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div
-              class="p-8 bg-surface-container-lowest/90 rounded-xl shadow-sm hover:shadow-md transition-all ring-1 ring-outline/10"
+              class="p-8 bg-surface-container-lowest/80 rounded-xl shadow-sm hover:shadow-md transition-all"
             >
-              <div class="w-12 h-12 rounded-lg bg-secondary-fixed/20 flex items-center justify-center mb-6">
-                <span class="material-symbols-outlined text-primary text-3xl">speed</span>
-              </div>
+              <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                >speed</span
+              >
               <h3 class="font-headline font-bold text-xl mb-4">Velocidad glacial</h3>
               <p class="text-on-surface-variant">
                 Optimizamos cada línea de código para que tu vitrina digital cargue
@@ -194,11 +211,11 @@
               </p>
             </div>
             <div
-              class="p-8 bg-surface-container-lowest/90 rounded-xl shadow-sm hover:shadow-md transition-all ring-1 ring-outline/10"
+              class="p-8 bg-surface-container-lowest/80 rounded-xl shadow-sm hover:shadow-md transition-all"
             >
-              <div class="w-12 h-12 rounded-lg bg-secondary-fixed/20 flex items-center justify-center mb-6">
-                <span class="material-symbols-outlined text-primary text-3xl">shield</span>
-              </div>
+              <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                >shield</span
+              >
               <h3 class="font-headline font-bold text-xl mb-4">Seguridad monolítica</h3>
               <p class="text-on-surface-variant">
                 Protegemos tu infraestructura con estándares industriales, garantizando
@@ -206,110 +223,16 @@
               </p>
             </div>
             <div
-              class="p-8 bg-surface-container-lowest/90 rounded-xl shadow-sm hover:shadow-md transition-all ring-1 ring-outline/10"
+              class="p-8 bg-surface-container-lowest/80 rounded-xl shadow-sm hover:shadow-md transition-all"
             >
-              <div class="w-12 h-12 rounded-lg bg-secondary-fixed/20 flex items-center justify-center mb-6">
-                <span class="material-symbols-outlined text-primary text-3xl">architecture</span>
-              </div>
+              <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                >architecture</span
+              >
               <h3 class="font-headline font-bold text-xl mb-4">Escalabilidad</h3>
               <p class="text-on-surface-variant">
                 Diseñamos arquitecturas que crecen contigo, adaptándose a las demandas
                 cambiantes del mercado.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-32 px-6 lg:px-24">
-        <div class="max-w-7xl mx-auto">
-          <div class="flex flex-col lg:flex-row justify-between items-end gap-8 mb-16">
-            <div class="max-w-2xl">
-              <h2
-                class="font-headline text-4xl lg:text-5xl font-extrabold text-primary mb-6"
-              >
-                Soluciones para el futuro digital
-              </h2>
-              <p class="text-lg text-on-surface-variant">
-                No solo creamos sitios; construimos ecosistemas de alto rendimiento.
-              </p>
-            </div>
-            <a
-              class="text-primary font-bold flex items-center gap-2 group"
-              href="services.html"
-            >
-              Explorar catálogo completo
-              <span
-                class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
-                >arrow_forward</span
-              >
-            </a>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto lg:h-[700px]">
-            <div
-              class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-2xl bg-primary"
-            >
-              <img
-                class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700"
-                alt="Panel de control minimalista con visualizaciones en azul y blanco"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0-j5Cb6rbpN7Eef5g1c_w44Boct1oJZotgFVgJpayDuCthjtGN_w0NFV6OSssS3AwJ16MGn-FRpspjMO3Uqrh-kCiFB_5lqERSctJnpPnsAprVj4hapUJTbY86yfXzUu23ta4JkmPTJxpM74Uf-ow7WR8qV3Wl_X3BdR8f20WiljCZEfe8UCYnOLhC9yPAdma2lwwgpfWpuPEK8jqJiGaqVcJF4C8K3g8vznJZvEBeuNgyyZGAXMIQWRRoeSeF6MnDV_2RWWA4A"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent"
-              ></div>
-              <div class="absolute bottom-0 left-0 p-10">
-                <h4 class="text-on-primary font-headline text-3xl font-bold mb-4">
-                  Vitrinas digitales e-commerce
-                </h4>
-                <p class="text-on-primary/80 max-w-sm mb-6">
-                  Plataformas de venta de alto impacto diseñadas para convertir visitas
-                  en clientes leales.
-                </p>
-                <span
-                  class="inline-block px-4 py-2 bg-on-primary text-primary font-bold rounded-lg text-sm"
-                  >Ver proyecto</span
-                >
-              </div>
-            </div>
-            <div
-              class="md:col-span-2 relative group overflow-hidden rounded-2xl bg-secondary-container"
-            >
-              <div class="absolute inset-0 p-8 flex flex-col justify-between">
-                <div>
-                  <h4
-                    class="text-on-secondary-container font-headline text-2xl font-bold mb-2"
-                  >
-                    Desarrollo web
-                  </h4>
-                  <p class="text-on-secondary-container/70">
-                    Aplicaciones progresivas con Next.js
-                  </p>
-                </div>
-                <span
-                  class="material-symbols-outlined text-4xl text-on-secondary-container/50"
-                  >layers</span
-                >
-              </div>
-            </div>
-            <div
-              class="md:col-span-1 relative group overflow-hidden rounded-2xl bg-surface-container-high"
-            >
-              <div class="absolute inset-0 p-8 flex flex-col justify-between">
-                <h4 class="text-primary font-headline text-xl font-bold">Consultoría IT</h4>
-                <span class="material-symbols-outlined text-3xl text-primary/40"
-                  >query_stats</span
-                >
-              </div>
-            </div>
-            <div
-              class="md:col-span-1 relative group overflow-hidden rounded-2xl bg-glacial-gradient"
-            >
-              <div class="absolute inset-0 p-8 flex flex-col justify-between">
-                <h4 class="text-on-primary font-headline text-xl font-bold">Cloud infra</h4>
-                <span class="material-symbols-outlined text-3xl text-on-primary/40"
-                  >cloud</span
-                >
-              </div>
             </div>
           </div>
         </div>
