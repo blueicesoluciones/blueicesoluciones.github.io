@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="assets/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="assets/css/custom.css" />
@@ -35,22 +39,22 @@
         <a
           class="px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 font-semibold"
           href="index.html"
-          >Home</a
+          >Inicio</a
         >
         <a
           class="px-3 py-3 rounded-lg bg-blue-100/50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-400 font-bold"
           href="services.html"
-          >Services</a
+          >Servicios</a
         >
         <a
           class="px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 font-semibold"
           href="work.html"
-          >Work</a
+          >Portafolio</a
         >
         <a
           class="px-3 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 font-semibold"
           href="process.html"
-          >Process</a
+          >Proceso</a
         >
       </nav>
     </div>
@@ -81,22 +85,22 @@
         <a
           class="text-slate-600 dark:text-slate-400 font-semibold hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors px-2 py-1 rounded-lg"
           href="index.html"
-          >Home</a
+          >Inicio</a
         >
         <a
           class="text-blue-700 dark:text-blue-400 font-bold hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors px-2 py-1 rounded-lg"
           href="services.html"
-          >Services</a
+          >Servicios</a
         >
         <a
           class="text-slate-600 dark:text-slate-400 font-semibold hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors px-2 py-1 rounded-lg"
           href="work.html"
-          >Work</a
+          >Portafolio</a
         >
         <a
           class="text-slate-600 dark:text-slate-400 font-semibold hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors px-2 py-1 rounded-lg"
           href="process.html"
-          >Process</a
+          >Proceso</a
         >
       </nav>
       <span
@@ -107,230 +111,307 @@
     </header>
 
     <main class="min-h-screen">
-      <section class="relative pt-24 pb-20 px-6 overflow-hidden">
-        <div class="max-w-7xl mx-auto flex flex-col items-start gap-8">
+      <section class="relative bg-slate-50 px-6 pb-12 pt-20 lg:px-24">
+        <div class="relative z-10 mx-auto w-full max-w-7xl">
           <div
-            class="inline-block px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed rounded-full text-xs font-bold tracking-widest uppercase mb-4"
+            class="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center sm:gap-7"
           >
-            Arquitectura digital
+            <h1
+              class="font-headline text-4xl font-extrabold leading-[1.12] tracking-tight text-primary text-center sm:text-5xl md:text-6xl"
+            >
+              Soluciones que elevan tu<br />
+              <span class="text-surface-tint">presencia digital.</span>
+            </h1>
+            <p
+              class="mx-auto max-w-5xl text-center text-base leading-relaxed text-slate-600 dark:text-slate-400 sm:text-lg"
+            >
+              Diseñamos herramientas digitales robustas, elegantes y precisas.<br />
+              No solo creamos sitios web, construimos el hogar digital de tu marca con
+              tecnología de vanguardia.
+            </p>
           </div>
-          <h1
-            class="text-5xl md:text-7xl font-extrabold text-primary font-headline tracking-tight leading-[1.1] max-w-4xl"
-          >
-            Soluciones que elevan tu
-            <span class="text-surface-tint">presencia digital.</span>
-          </h1>
-          <p
-            class="text-lg md:text-xl text-on-surface-variant max-w-2xl font-body leading-relaxed"
-          >
-            Diseñamos herramientas digitales robustas, elegantes y precisas. No solo
-            creamos sitios web, construimos el hogar digital de tu marca con tecnología
-            de vanguardia.
-          </p>
-        </div>
-        <div
-          class="absolute -top-24 -right-24 w-96 h-96 bg-gradient-to-br from-primary-container/20 to-transparent rounded-full blur-3xl -z-10"
-        ></div>
-      </section>
 
-      <section class="px-6 pb-32 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <!-- Carrusel horizontal: tarjetas estilo editorial (foto → título → texto → Saber más ↗), alineado a la izq. -->
           <div
-            class="md:col-span-8 bg-surface-container-low p-8 md:p-12 rounded-xl group hover:bg-surface-container-high transition-all duration-300 shadow-[0px_12px_32px_rgba(25,28,30,0.06)] flex flex-col justify-between min-h-[400px]"
+            class="mx-auto mt-12 w-full max-w-[88rem] px-1 sm:px-2"
+            data-services-carousel
+            aria-roledescription="carrusel"
+            aria-label="Listado de servicios"
           >
             <div
-              class="flex flex-col md:flex-row justify-between items-start gap-8"
+              data-services-carousel-viewport
+              class="flex snap-x snap-mandatory gap-4 overflow-x-auto overflow-y-hidden scroll-smooth px-3 pb-3 pt-1 sm:px-4 [scrollbar-width:thin] [-webkit-overflow-scrolling:touch]"
+              tabindex="0"
             >
-              <div class="max-w-lg">
-                <span
-                  class="material-symbols-outlined text-5xl text-primary mb-6"
-                  style="font-variation-settings: 'FILL' 1"
-                  >web</span
+              <article
+                data-carousel-slide
+                class="flex h-[min(38rem,calc(100vh-10rem))] w-[min(22rem,92vw)] shrink-0 snap-start snap-always flex-col overflow-hidden rounded-2xl border border-stone-200/90 bg-stone-50 shadow-sm dark:border-stone-700/70 dark:bg-stone-900/35 sm:w-[24rem] md:h-[42rem] md:w-[26rem] lg:w-[28rem]"
+              >
+                <div
+                  class="flex min-h-0 flex-1 flex-col items-start p-5 text-left sm:p-6"
                 >
-                <h2 class="text-3xl font-bold font-headline mb-4 text-primary">
-                  Páginas web con diseño personalizado
-                </h2>
-                <p class="text-on-surface-variant leading-relaxed mb-8">
-                  Olvídate de las plantillas genéricas. Construimos una identidad visual
-                  única que cautiva a tus clientes y posiciona tu marca como líder en su
-                  industria desde el primer clic.
-                </p>
-              </div>
-              <div
-                class="w-full md:w-1/3 aspect-square rounded-xl overflow-hidden bg-surface-variant/50"
-              >
-                <img
-                  alt="Espacio de trabajo con monitores y wireframes de interfaz"
-                  class="w-full h-full object-cover mix-blend-multiply opacity-80"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkkuKxpEMzAaSlaBYntTO_KMY7QjygXsIlzzi78nIraq88kKrWuzD5821diXepeiBnduy1v0kBDVICTnEMN1LPytYlHoNBQkUu3eA6z9ziTk40_CIE47hMwHY80CkTx8Voj6RdtubEx0egnw7TgvTR8KKKmseVeQ_HT5djhj_q5-l0ISTi0OKd35HzN-8YqDvrxEONq8FmVp5l_4GveSATTBeyLDRrWkNUoOD4op_plsfeT-UfFLI1VxI6GGBxtiFWI9C4IlNsdQ"
-                />
-              </div>
-            </div>
-            <div class="flex justify-end">
-              <button
-                type="button"
-                class="px-8 py-3 bg-primary text-on-primary rounded-md font-semibold text-sm hover:bg-primary-container transition-colors active:scale-95 duration-200"
-              >
-                Saber más
-              </button>
-            </div>
-          </div>
+                  <div
+                    class="mb-3 min-h-[11rem] w-full min-w-0 flex-1 basis-0 overflow-hidden rounded-md bg-stone-200 dark:bg-stone-800 sm:min-h-[12rem]"
+                  >
+                    <img
+                      src="images/Paginaswebcondiseno-personalizado.JPG.webp"
+                      width="800"
+                      height="533"
+                      alt="Páginas web con diseño personalizado"
+                      class="h-full w-full object-cover object-top"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h2
+                    class="font-headline text-base font-bold leading-snug text-slate-900 dark:text-stone-100"
+                  >
+                    Páginas web con diseño personalizado
+                  </h2>
+                  <p
+                    class="mt-3 shrink-0 text-sm font-normal leading-relaxed text-slate-600 dark:text-stone-400"
+                  >
+                    Olvídate de las plantillas genéricas. Construimos una identidad visual
+                    única que cautiva a tus clientes y posiciona tu marca desde el primer
+                    clic, con una base pensada para crecer contigo.
+                  </p>
+                </div>
+              </article>
 
-          <div
-            class="md:col-span-4 bg-surface-container-low p-8 rounded-xl group hover:bg-surface-container-high transition-all duration-300 shadow-[0px_12px_32px_rgba(25,28,30,0.06)] flex flex-col justify-between"
-          >
-            <div>
-              <span class="material-symbols-outlined text-4xl text-primary mb-6"
-                >rocket_launch</span
+              <article
+                data-carousel-slide
+                class="flex h-[min(38rem,calc(100vh-10rem))] w-[min(22rem,92vw)] shrink-0 snap-start snap-always flex-col overflow-hidden rounded-2xl border border-stone-200/90 bg-stone-50 shadow-sm dark:border-stone-700/70 dark:bg-stone-900/35 sm:w-[24rem] md:h-[42rem] md:w-[26rem] lg:w-[28rem]"
               >
-              <h2 class="text-2xl font-bold font-headline mb-4 text-primary">
-                Landing pages de alta conversión
-              </h2>
-              <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
-                Transformamos visitas en ventas. Diseñamos páginas optimizadas para
-                capturar leads y maximizar tu retorno de inversión con una experiencia de
-                usuario fluida.
-              </p>
-            </div>
-            <button
-              type="button"
-              class="w-full py-3 border border-outline-variant/30 text-primary rounded-md font-semibold text-sm hover:bg-primary/5 transition-colors active:scale-95 duration-200"
-            >
-              Saber más
-            </button>
-          </div>
+                <div
+                  class="flex min-h-0 flex-1 flex-col items-start p-5 text-left sm:p-6"
+                >
+                  <div
+                    class="mb-3 min-h-[11rem] w-full min-w-0 flex-1 basis-0 overflow-hidden rounded-md bg-stone-200 dark:bg-stone-800 sm:min-h-[12rem]"
+                  >
+                    <img
+                      src="images/Landingpagesdealtaconversion.JPG.webp"
+                      width="800"
+                      height="533"
+                      alt="Landing pages de alta conversión"
+                      class="h-full w-full object-cover object-top"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h2
+                    class="font-headline text-base font-bold leading-snug text-slate-900 dark:text-stone-100"
+                  >
+                    Landing pages de alta conversión
+                  </h2>
+                  <p
+                    class="mt-3 shrink-0 text-sm font-normal leading-relaxed text-slate-600 dark:text-stone-400"
+                  >
+                    Transformamos visitas en oportunidades. Diseñamos páginas claras, con
+                    CTA efectivos y un recorrido fluido para captar leads y acompañar tu
+                    inversión con foco en conversión.
+                  </p>
+                </div>
+              </article>
 
-          <div
-            class="md:col-span-4 bg-surface-container-low p-8 rounded-xl group hover:bg-surface-container-high transition-all duration-300 shadow-[0px_12px_32px_rgba(25,28,30,0.06)] flex flex-col justify-between"
-          >
-            <div>
-              <span class="material-symbols-outlined text-4xl text-primary mb-6"
-                >gallery_thumbnail</span
+              <article
+                data-carousel-slide
+                class="flex h-[min(38rem,calc(100vh-10rem))] w-[min(22rem,92vw)] shrink-0 snap-start snap-always flex-col overflow-hidden rounded-2xl border border-stone-200/90 bg-stone-50 shadow-sm dark:border-stone-700/70 dark:bg-stone-900/35 sm:w-[24rem] md:h-[42rem] md:w-[26rem] lg:w-[28rem]"
               >
-              <h2 class="text-2xl font-bold font-headline mb-4 text-primary">
-                Portafolios y CV elegantes
-              </h2>
-              <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
-                Tu talento merece una vitrina a la altura. Creamos hojas de vida
-                digitales y portafolios interactivos que proyectan profesionalismo y
-                atención al detalle.
-              </p>
-            </div>
-            <button
-              type="button"
-              class="w-full py-3 border border-outline-variant/30 text-primary rounded-md font-semibold text-sm hover:bg-primary/5 transition-colors"
-            >
-              Saber más
-            </button>
-          </div>
+                <div
+                  class="flex min-h-0 flex-1 flex-col items-start p-5 text-left sm:p-6"
+                >
+                  <div
+                    class="mb-3 min-h-[11rem] w-full min-w-0 flex-1 basis-0 overflow-hidden rounded-md bg-stone-200 dark:bg-stone-800 sm:min-h-[12rem]"
+                  >
+                    <img
+                      src="images/PortafoliosyCVelegantes.JPG.webp"
+                      width="800"
+                      height="533"
+                      alt="Portafolios y CV elegantes"
+                      class="h-full w-full object-cover object-top"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h2
+                    class="font-headline text-base font-bold leading-snug text-slate-900 dark:text-stone-100"
+                  >
+                    Portafolios y CV elegantes
+                  </h2>
+                  <p
+                    class="mt-3 shrink-0 text-sm font-normal leading-relaxed text-slate-600 dark:text-stone-400"
+                  >
+                    Tu talento merece una vitrina a la altura. Creamos hojas de vida y
+                    portafolios digitales con tono profesional, orden visual y un detalle
+                    que se nota en cada sección.
+                  </p>
+                </div>
+              </article>
 
-          <div
-            class="md:col-span-4 bg-primary text-on-primary p-8 rounded-xl group transition-all duration-300 shadow-[0px_12px_32px_rgba(0,62,107,0.15)] flex flex-col justify-between"
-          >
-            <div>
-              <span
-                class="material-symbols-outlined text-4xl text-on-primary-container mb-6"
-                >contact_page</span
+              <article
+                data-carousel-slide
+                class="flex h-[min(38rem,calc(100vh-10rem))] w-[min(22rem,92vw)] shrink-0 snap-start snap-always flex-col overflow-hidden rounded-2xl border border-stone-200/90 bg-stone-50 shadow-sm dark:border-stone-700/70 dark:bg-stone-900/35 sm:w-[24rem] md:h-[42rem] md:w-[26rem] lg:w-[28rem]"
               >
-              <h2 class="text-2xl font-bold font-headline mb-4">
-                Tarjetas de presentación (one-page)
-              </h2>
-              <p class="text-on-primary-container text-sm leading-relaxed mb-8 opacity-90">
-                La primera impresión cuenta. Lleva toda tu información de contacto y
-                enlaces sociales en una sola página optimizada para móviles, lista para
-                compartir con un toque.
-              </p>
-            </div>
-            <button
-              type="button"
-              class="w-full py-3 bg-on-primary text-primary rounded-md font-semibold text-sm hover:bg-primary-fixed transition-colors active:scale-95 duration-200"
-            >
-              Saber más
-            </button>
-          </div>
+                <div
+                  class="flex min-h-0 flex-1 flex-col items-start p-5 text-left sm:p-6"
+                >
+                  <div
+                    class="mb-3 min-h-[11rem] w-full min-w-0 flex-1 basis-0 overflow-hidden rounded-md bg-stone-200 dark:bg-stone-800 sm:min-h-[12rem]"
+                  >
+                    <img
+                      src="images/Tarjetasdepresentacion(one-page).JPG.webp"
+                      width="800"
+                      height="533"
+                      alt="Tarjetas de presentación (one-page)"
+                      class="h-full w-full object-cover object-top"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h2
+                    class="font-headline text-base font-bold leading-snug text-slate-900 dark:text-stone-100"
+                  >
+                    Tarjetas de presentación (one-page)
+                  </h2>
+                  <p
+                    class="mt-3 shrink-0 text-sm font-normal leading-relaxed text-slate-600 dark:text-stone-400"
+                  >
+                    Una sola página con tu contacto, redes y enlaces clave. Pensada para
+                    móvil y para compartir al instante, con una primera impresión limpia y
+                    memorable.
+                  </p>
+                </div>
+              </article>
 
-          <div
-            class="md:col-span-4 bg-surface-container-low p-8 rounded-xl group hover:bg-surface-container-high transition-all duration-300 shadow-[0px_12px_32px_rgba(25,28,30,0.06)] flex flex-col justify-between"
-          >
-            <div>
-              <span class="material-symbols-outlined text-4xl text-primary mb-6"
-                >qr_code_2</span
+              <article
+                data-carousel-slide
+                class="flex h-[min(38rem,calc(100vh-10rem))] w-[min(22rem,92vw)] shrink-0 snap-start snap-always flex-col overflow-hidden rounded-2xl border border-stone-200/90 bg-stone-50 shadow-sm dark:border-stone-700/70 dark:bg-stone-900/35 sm:w-[24rem] md:h-[42rem] md:w-[26rem] lg:w-[28rem]"
               >
-              <h2 class="text-2xl font-bold font-headline mb-4 text-primary">
-                Menús digitales con QR
-              </h2>
-              <p class="text-on-surface-variant text-sm leading-relaxed mb-8">
-                Moderniza tu restaurante con cartas interactivas. Fáciles de actualizar,
-                higiénicos y diseñados para que tus platos se vean irresistibles en
-                cualquier pantalla.
-              </p>
-            </div>
-            <button
-              type="button"
-              class="w-full py-3 border border-outline-variant/30 text-primary rounded-md font-semibold text-sm hover:bg-primary/5 transition-colors"
-            >
-              Saber más
-            </button>
-          </div>
+                <div
+                  class="flex min-h-0 flex-1 flex-col items-start p-5 text-left sm:p-6"
+                >
+                  <div
+                    class="mb-3 min-h-[11rem] w-full min-w-0 flex-1 basis-0 overflow-hidden rounded-md bg-stone-200 dark:bg-stone-800 sm:min-h-[12rem]"
+                  >
+                    <img
+                      src="images/MenusdigitalesconQR.JPG.webp"
+                      width="800"
+                      height="533"
+                      alt="Menús digitales con QR"
+                      class="h-full w-full object-cover object-top"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h2
+                    class="font-headline text-base font-bold leading-snug text-slate-900 dark:text-stone-100"
+                  >
+                    Menús digitales con QR
+                  </h2>
+                  <p
+                    class="mt-3 shrink-0 text-sm font-normal leading-relaxed text-slate-600 dark:text-stone-400"
+                  >
+                    Moderniza tu carta con una experiencia clara en pantalla. Fácil de
+                    actualizar cuando cambia tu menú y pensada para verse bien en mesa y
+                    en el bolsillo.
+                  </p>
+                </div>
+              </article>
 
-          <div
-            class="md:col-span-6 bg-surface-container-low p-8 rounded-xl group hover:bg-surface-container-high transition-all duration-300 shadow-[0px_12px_32px_rgba(25,28,30,0.06)] flex flex-col md:flex-row items-center gap-8"
-          >
-            <div class="flex-1">
-              <span class="material-symbols-outlined text-4xl text-primary mb-6"
-                >build_circle</span
+              <article
+                data-carousel-slide
+                class="flex h-[min(38rem,calc(100vh-10rem))] w-[min(22rem,92vw)] shrink-0 snap-start snap-always flex-col overflow-hidden rounded-2xl border border-stone-200/90 bg-stone-50 shadow-sm dark:border-stone-700/70 dark:bg-stone-900/35 sm:w-[24rem] md:h-[42rem] md:w-[26rem] lg:w-[28rem]"
               >
-              <h2 class="text-2xl font-bold font-headline mb-4 text-primary">
-                Mantenimiento y optimización
-              </h2>
-              <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
-                Tu sitio web siempre rápido y seguro. Nos encargamos de la velocidad, las
-                actualizaciones y la seguridad para que tú te enfoques solo en tu
-                negocio.
-              </p>
-              <button
-                type="button"
-                class="px-6 py-2 border border-outline-variant/30 text-primary rounded-md font-semibold text-sm hover:bg-primary/5 transition-colors"
+                <div
+                  class="flex min-h-0 flex-1 flex-col items-start p-5 text-left sm:p-6"
+                >
+                  <div
+                    class="mb-3 min-h-[11rem] w-full min-w-0 flex-1 basis-0 overflow-hidden rounded-md bg-stone-200 dark:bg-stone-800 sm:min-h-[12rem]"
+                  >
+                    <img
+                      src="images/Mantenimientoyoptimizacion.JPG.webp"
+                      width="800"
+                      height="533"
+                      alt="Mantenimiento y optimización"
+                      class="h-full w-full object-cover object-top"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h2
+                    class="font-headline text-base font-bold leading-snug text-slate-900 dark:text-stone-100"
+                  >
+                    Mantenimiento y optimización
+                  </h2>
+                  <p
+                    class="mt-3 shrink-0 text-sm font-normal leading-relaxed text-slate-600 dark:text-stone-400"
+                  >
+                    Tu sitio estable, rápido y al día. Acompañamos rendimiento, ajustes y
+                    buenas prácticas de seguridad para que el plano técnico no te frene en
+                    el día a día.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                data-carousel-slide
+                class="flex h-[min(38rem,calc(100vh-10rem))] w-[min(22rem,92vw)] shrink-0 snap-start snap-always flex-col overflow-hidden rounded-2xl border border-stone-200/90 bg-stone-50 shadow-sm dark:border-stone-700/70 dark:bg-stone-900/35 sm:w-[24rem] md:h-[42rem] md:w-[26rem] lg:w-[28rem]"
               >
-                Saber más
-              </button>
+                <div
+                  class="flex min-h-0 flex-1 flex-col items-start p-5 text-left sm:p-6"
+                >
+                  <div
+                    class="mb-3 min-h-[11rem] w-full min-w-0 flex-1 basis-0 overflow-hidden rounded-md bg-stone-200 dark:bg-stone-800 sm:min-h-[12rem]"
+                  >
+                    <img
+                      src="images/Formulariosinteligentes.JPG.webp"
+                      width="800"
+                      height="533"
+                      alt="Formularios inteligentes"
+                      class="h-full w-full object-cover object-top"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h2
+                    class="font-headline text-base font-bold leading-snug text-slate-900 dark:text-stone-100"
+                  >
+                    Formularios inteligentes
+                  </h2>
+                  <p
+                    class="mt-3 shrink-0 text-sm font-normal leading-relaxed text-slate-600 dark:text-stone-400"
+                  >
+                    Consultas, reservas y datos al día sin montar servidores complejos.
+                    Propuestas livianas, rápidas de publicar y conectadas a tu correo o
+                    herramientas habituales.
+                  </p>
+                </div>
+              </article>
             </div>
+
             <div
-              class="w-24 h-24 hidden md:flex items-center justify-center bg-secondary-container/30 rounded-full"
+              class="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-6"
             >
-              <span
-                class="material-symbols-outlined text-4xl text-primary"
-                style="font-variation-settings: 'FILL' 1"
-                >speed</span
+              <button
+                type="button"
+                data-carousel-prev
+                class="inline-flex items-center gap-1 rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-primary shadow-sm transition-colors hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-900 dark:hover:bg-slate-800"
               >
-            </div>
-          </div>
-
-          <div
-            class="md:col-span-6 bg-surface-container-low p-8 rounded-xl group hover:bg-surface-container-high transition-all duration-300 shadow-[0px_12px_32px_rgba(25,28,30,0.06)] flex flex-col md:flex-row items-center gap-8"
-          >
-            <div class="flex-1">
-              <span class="material-symbols-outlined text-4xl text-primary mb-6"
-                >dynamic_form</span
+                <span class="material-symbols-outlined text-xl" aria-hidden="true"
+                  >chevron_left</span
+                >
+                Anterior
+              </button>
+              <p
+                class="text-center font-label text-sm font-medium text-slate-500 dark:text-slate-400"
+                data-carousel-status
+                aria-live="polite"
               >
-              <h2 class="text-2xl font-bold font-headline mb-4 text-primary">
-                Formularios inteligentes
-              </h2>
-              <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
-                Recibe datos, reservas y consultas sin necesidad de servidores complejos.
-                Soluciones rápidas, ligeras y conectadas directamente a tu correo o CRM.
+                1 / 7
               </p>
               <button
                 type="button"
-                class="px-6 py-2 border border-outline-variant/30 text-primary rounded-md font-semibold text-sm hover:bg-primary/5 transition-colors"
+                data-carousel-next
+                class="inline-flex items-center gap-1 rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-primary shadow-sm transition-colors hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-900 dark:hover:bg-slate-800"
               >
-                Saber más
+                Siguiente
+                <span class="material-symbols-outlined text-xl" aria-hidden="true"
+                  >chevron_right</span
+                >
               </button>
-            </div>
-            <div
-              class="w-24 h-24 hidden md:flex items-center justify-center bg-tertiary-fixed/30 rounded-full text-tertiary"
-            >
-              <span class="material-symbols-outlined text-4xl">hub</span>
             </div>
           </div>
         </div>
@@ -410,7 +491,7 @@
       >
         <span class="material-symbols-outlined">home</span>
         <span class="font-body text-[10px] font-semibold uppercase tracking-widest mt-1"
-          >Home</span
+          >Inicio</span
         >
       </a>
       <a
@@ -419,7 +500,7 @@
       >
         <span class="material-symbols-outlined">settings_suggest</span>
         <span class="font-body text-[10px] font-semibold uppercase tracking-widest mt-1"
-          >Services</span
+          >Servicios</span
         >
       </a>
       <a
@@ -428,7 +509,7 @@
       >
         <span class="material-symbols-outlined">grid_view</span>
         <span class="font-body text-[10px] font-semibold uppercase tracking-widest mt-1"
-          >Work</span
+          >Portafolio</span
         >
       </a>
       <a
@@ -437,7 +518,7 @@
       >
         <span class="material-symbols-outlined">account_tree</span>
         <span class="font-body text-[10px] font-semibold uppercase tracking-widest mt-1"
-          >Process</span
+          >Proceso</span
         >
       </a>
     </nav>
