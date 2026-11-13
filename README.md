@@ -1,11 +1,13 @@
-# blueicesoluciones.github.io
+# Blue Ice Soluciones Tecnológicas
 
-Sitio estático para **GitHub Pages** (repositorio de usuario u organización: se publica desde la rama `main` en la raíz del repositorio).
+Sitio estático (HTML, CSS y JS, sin build) publicado en **Vercel** en https://blueicesoluciones.com
 
 ## Publicación
 
-1. En el repositorio de GitHub: **Settings → Pages**.
-2. **Build and deployment**: origen **Deploy from a branch**, rama `main` y carpeta **`/(root)`**.
-3. Tras el despliegue, la web quedará en `https://blueicesoluciones.github.io/`.
+- Cada `push` a la rama `main` despliega automáticamente a producción en Vercel.
+- Configuración del proyecto en Vercel: Framework Preset **Other**, sin Build Command, Output Directory en la raíz.
+- Dominio: `blueicesoluciones.com` (principal) y `www.blueicesoluciones.com` (redirige con 308). DNS administrado en Hostinger.
 
-Rutas internas: `index.html`, `services.html`, `work.html`, `process.html` (enlaces relativos, compatibles con Pages). El archivo `.nojekyll` evita que Jekyll ignore rutas o archivos con nombres especiales.
+## Páginas
+
+`index.html`, `work.html`, `process.html` y `services.html` (esta última redirige a `index.html#servicios`). Todos los enlaces internos son relativos.
