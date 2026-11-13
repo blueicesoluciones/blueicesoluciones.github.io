@@ -114,3 +114,40 @@
   window.addEventListener("resize", updateStatus);
   updateStatus();
 })();
+
+/* Aparición suave de secciones al hacer scroll */
+(function () {
+  var items = document.querySelectorAll(".reveal");
+  if (!items.length) return;
+  if (!("IntersectionObserver" in window)) {
+    items.forEach(function (el) {
+      el.classList.add("is-visible");
+    });
+    return;
+  }
+  var io = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  );
+  items.forEach(function (el) {
+    io.observe(el);
+  });
+})();
+
+/* Sombra en el header al hacer scroll */
+(function () {
+  var header = document.querySelector("[data-site-header]");
+  if (!header) return;
+  function onScroll() {
+    header.classList.toggle("shadow-md", window.scrollY > 8);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();

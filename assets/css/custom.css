@@ -1,43 +1,109 @@
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+/* ===== Blue Ice — estilos de marca ===== */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
-.bg-glacial-gradient {
-  background: linear-gradient(135deg, #003e6b 0%, #005691 100%);
-}
-
-.monolith-gradient {
-  background: linear-gradient(135deg, #003e6b 0%, #005691 100%);
-}
-
-.glass-panel {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.7);
-}
-
-body {
-  min-height: max(884px, 100dvh);
-}
-
-/* Fuente global (forzar sobre Tailwind y clases tipográficas) */
 html,
-body {
-  font-family: "Sora", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
-    "Apple Color Emoji", "Segoe UI Emoji";
-}
-
+body,
 .font-body,
 .font-headline,
 .font-label {
-  font-family: "Sora", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
-    "Apple Color Emoji", "Segoe UI Emoji" !important;
+  font-family: "Sora", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 .pb-safe {
   padding-bottom: max(0.5rem, env(safe-area-inset-bottom, 0px));
 }
 
-#mobile-drawer:not(.hidden) {
-  pointer-events: auto;
+/* Trazos de circuito inspirados en el logo (pingüino + chip) */
+.bg-circuit {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='%2303408e' stroke-opacity='.10' stroke-width='1.5' stroke-linecap='round'%3E%3Cpath d='M0 40h40l20 20v40'/%3E%3Cpath d='M160 120h-50l-15-15V60'/%3E%3Cpath d='M80 0v25l15 15h25'/%3E%3Cpath d='M20 160v-30l20-20h20'/%3E%3C/g%3E%3Cg fill='none' stroke='%2303408e' stroke-opacity='.14' stroke-width='1.5'%3E%3Ccircle cx='60' cy='104' r='4'/%3E%3Ccircle cx='95' cy='56' r='4'/%3E%3Ccircle cx='124' cy='40' r='4'/%3E%3C/g%3E%3Crect x='56' y='126' width='12' height='12' rx='2' fill='none' stroke='%2303408e' stroke-opacity='.14' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+
+.bg-circuit-light {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.08' stroke-width='1.5' stroke-linecap='round'%3E%3Cpath d='M0 40h40l20 20v40'/%3E%3Cpath d='M160 120h-50l-15-15V60'/%3E%3Cpath d='M80 0v25l15 15h25'/%3E%3Cpath d='M20 160v-30l20-20h20'/%3E%3Ccircle cx='60' cy='104' r='4'/%3E%3Ccircle cx='95' cy='56' r='4'/%3E%3Ccircle cx='124' cy='40' r='4'/%3E%3Crect x='56' y='126' width='12' height='12' rx='2'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+
+/* Desvanece el patrón hacia los bordes */
+.mask-fade {
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+}
+
+/* Brillo "hielo" detrás del logo */
+.ice-glow {
+  background: radial-gradient(
+    circle at 50% 45%,
+    rgba(95, 162, 245, 0.35) 0%,
+    rgba(201, 223, 255, 0.25) 40%,
+    transparent 70%
+  );
+}
+
+.text-gradient-ice {
+  background: linear-gradient(90deg, #03408e 0%, #1d6fe0 60%, #5fa2f5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Animaciones */
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .float-slow {
+    animation: none;
+  }
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Carrusel: barra de scroll discreta */
+[data-services-carousel-viewport] {
+  scrollbar-width: none;
+}
+[data-services-carousel-viewport]::-webkit-scrollbar {
+  display: none;
 }
